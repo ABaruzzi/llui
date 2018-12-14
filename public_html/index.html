@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AlessandroBaruzzi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        
+     
+        
+        
+        
+        <div id="div_1" style="font-size:80px"> Imposta Titolo</div>
+        <div id="div_2" style="font-size:45px"> Imposta Sottotitolo</div>
+        
+        Titolo: <input id="input_testo" placeholder="Scrivi Testo" type="text"/>
+        <div></div>
+        <button onclick="impostaTitolo()">Imposta il Titolo...</button>
+        <div></div>
+        <button onclick="impostaSottotitolo()">Imposta Sottotitolo</button>
+        
+       
+    </body>
+</html>
+
+<script>
+
+function impostaTitolo(){
+
+//recupero oggetto input testo
+var mioObjTesto = document.getElementById("input_testo");
+//Assegno alla variabile Txin la variabile del contenuto.
+var txIn = mioObjTesto.value;
+//recupero oggetto finale per il testo da far vedere
+var mioDiv1 = document.getElementById("div_1");
+//Assegna al Contenuto del Div la frase che c'è in txin
+mioDiv1.innerHTML = txIn;
+mioObjTesto.value="";
+
+}
+
+function impostaSottotitolo(){
+
+//recupero oggetto input testo
+var mioObjTesto = document.getElementById("input_testo");
+//Assegno alla variabile Txin la variabile del contenuto.
+var txIn = mioObjTesto.value;
+//recupero oggetto finale per il testo da far vedere
+var mioDiv1 = document.getElementById("div_2");
+//Assegna al Contenuto del Div la frase che c'è in txin
+mioDiv1.innerHTML = txIn;
+mioObjTesto.value="";
+
+}
+
+
+
+
+
+
+</script>
